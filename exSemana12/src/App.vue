@@ -1,11 +1,16 @@
-<script setup>
-
-</script>
-
 <template>
-  <h1>Hello</h1>
+  <TheHeader/>
 
+  <RouterView />
 </template>
 
-<style scoped>
-</style>
+<script>
+import TheHome from './views/home/TheHome.vue'
+import TheHeader from "./views/header/TheHeader.vue"
+
+export default {
+  components: { TheHeader, TheHome }
+}
+</script>
+
+<style scoped></style>
